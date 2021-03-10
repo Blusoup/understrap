@@ -14,16 +14,35 @@ get_header();
 
 ?>
 
+
 <main class="main main--home">
+
+  <div class="hero homesection1" id="main"> <!-- .hero -->
+    <div class="hero__title">
+      <h1 class="item-a">
+        <span class="heading__one" style="display: block;">Make</span> 
+        <span class="heading__two" style="display: block;">Positive</span>
+        <span class="heading__three" style="display: block;">Tracks</span>
+        <span class="sr-only">Yellow Sub Geo</span>
+        <!--<img src="images/yellow-sub-geo.svg" />-->
+      </h1>
+    </div>
+    <img class="hero__image item-b" src="<?php echo get_template_directory_uri(); ?>/img/TheMightySub_v01.png" alt="3d illustration of a yellow submarine with caterpillar tracks">
+  </div><!-- .hero -->
+
+  <div class="below-hero"><!-- .below-hero -->
+    <a href="#sustainability"><img src="<?php echo get_template_directory_uri(); ?>/img/down.png" aria-hidden="true" width="50" alt=""></a>
+  </div><!-- .below-hero -->
+
   <section class="section homesection2 edged--top edged--bottom">
     <div class="section__titlecontainer" id="sustainability">
-      <h2 class="section__title h1">
+      <h2 class="section__title">
         <strong>Swashbuckling</strong><br>
         Sustainability
       </h2>
     </div>
     <div class="section__column homesection2__globe">
-      <img src="<?php echo get_template_directory_uri(); ?>../img/globe.png" alt="the Earth">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/globe.png" alt="the Earth">
     </div>
     <div class="section__column homesection2__copy">
       <h3 class="h2" data-preventwidows="">
@@ -38,7 +57,7 @@ get_header();
         Donec erat ipsum, efficitur ullamcorper lectus quis,
         mattis tempor nunc.
       </p>
-      <img src="<?php echo get_template_directory_uri(); ?>../img/global-goals.svg" alt="The Global Goals for Sustainable Development logo">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/global-goals.png" alt="The Global Goals for Sustainable Development logo">
     </div>
   </section>
   <div class="homesection3buffer" aria-hidden="true"></div>

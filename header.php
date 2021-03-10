@@ -28,19 +28,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
-
 		<nav class="navbar navbar-expand-lg">
 
-		
 			<div class="container">
-		
 
-					
+			<a href="/" class="header__homelink">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/sub.svg" alt="Yellow Sub Geo">
+			</a>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+			<button class="navbar-toggler mainnav__trigger hamburger hamburger--squeeze" 
+				type="button" data-toggle="collapse" 
+				data-target="#navbarNavDropdown" 
+				aria-controls="navbarNavDropdown" 
+				aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>"> 
+				<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+			</button>
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
@@ -60,5 +64,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			
 
 		</nav><!-- .site-navigation -->
+
+			
 
 	</div><!-- #wrapper-navbar end -->
